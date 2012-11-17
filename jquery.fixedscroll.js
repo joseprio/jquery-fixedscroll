@@ -5,18 +5,14 @@
  * 
  * @author Josep del Rio
  *
- * @projectDescription	jQuery plugin for allowing an element to animate down as the user scrolls the page.
+ * @projectDescription	jQuery plugin to make areas of the page follow other content while scrolling..
  * 
  * @version 0.1.0
  * 
- * @requires jquery.js (tested with 1.2.6)
+ * @requires jquery.js (tested with 1.8.2)
  * 
- * @param offText		string - killSwitch text to be displayed if sliding is disabled
- * 								default: 'Turn Slide On'
- * @param relativeTo	string - Scroll animation can be relative to either the 'top' or 'bottom' of the viewport
- * 								default: 'top'
- * @param delay			int - Time between the end of the scroll and the beginning of the animation in milliseconds
- * 								default: 0
+ * @param follow		string or jQuery container - string containing a jQuery selector, or jQuery container; will be used as the box to follow.
+ * 								default: box's parent
  */
 
 ( function( $ ) {
@@ -193,8 +189,6 @@
 	
 	$.fn.fixedScroll = function ( options )	{
 		options = options || {};
-		options.relativeTo = options.relativeTo || 'top';
-		options.offset = options.offset || 0;
 		options.follow = options.follow || null;
 		
 		this.each( function() {
