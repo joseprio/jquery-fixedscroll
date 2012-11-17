@@ -1,0 +1,29 @@
+{
+    "name": "fixedScroll",
+    "version": "0.1.0",
+    "title": "Fixed Scroll",
+    "author": {
+        "name": "Josep del Rio",
+        "url": "http://www.joseprio.com/"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "dependencies": {
+        "jquery": "1"
+    },
+    "description": "Delay loading of images in long web pages. Images outside of viewport wont be loaded before user scrolls to them.",
+    "keywords": [
+        "fixed",
+        "scroll",
+        "follow"
+    ],
+    "homepage": "https://github.com/joseprio/jquery-fixedscroll",
+    "files": [
+        "jquery.fixedscroll.js",
+        "jquery.fixedscroll.min.js"
+    ]
+}
